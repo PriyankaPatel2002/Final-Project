@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.containe{
+	height:50vh;
+	width:100%;
+}
+.gallary-slide{
+	height:100%;
+	width:100%;
+	background:url(../image/book-4126483_1280.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-image:inherite;
+	position:relative;
+}
+.gallary-slide-up-box{
+	background-color: #000;
+	height: 100%;
+	width: 100%;
+	opacity: 0.8;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.gallary-slide-up-box h2{
+	color: #fff;
+	font-size: 4em;
+	position: relative;
+}
+.gallary-slide-up-box h2::after{
+	content: " ";
+	position: absolute;
+	top:100%;
+	left: 0px;
+	height: 10%;
+	width: 0%;
+	background-color: #04d2c8;
+	border-radius: 10px;
+	transition:0.3s linear;
+}
+.gallary-slide-up-box h2:hover::after{
+	width: 100%;
+	transform-origin: left;
+}
+/*----------------------------------------------*/
+.container2{
+	min-height:50vh;
+	width:100%;
+	padding:50px 0px;
+}
+.gallary-hero{
+	margin:0px auto;
+	height:100%;
+	width:85%;
+	display:flex;
+	justify-content:space-between;
+	flex-wrap:wrap;
+}
+.gallary-image-box{
+	height:45vh;
+	width:32%;
+	margin:15px 0px;
+	border-radius:10px;
+	object-fit: fill;
+	position: relative;
+}
+.hover-effect{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top:0;
+	left:0;
+	background-color: rgba(0,0,0,0.6);
+	display: flex;
+	padding: 0px 30px;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	transition: 0.6s;
+	border-radius:10px;
+	transition: opacity 0.3s;
+	opacity: 0;
+}
+.hover-effect:hover{
+	opacity: 1;
+	transform-origin: left;
+}
+.hover-effect h2{
+	color:#fff;
+}
+.hover-effect a{
+	text-decoration: none;
+	font-size: 25px;
+	color:#fff;
+}
+.gallary-image-box img{
+	height:	100%;
+	width:100%;
+	border-radius:10px;
+}
+@media (max-width:1024px){
+	.gallary-hero{
+		margin:0px auto;
+		height:100%;
+		width:87%;
+		flex-wrap: wrap;
+	}
+	.gallary-image-box{
+		width:49%;
+		margin:10px 0px;
+	}
+}
+@media (max-width:768px){
+	.gallary-hero{
+		margin:0px auto;
+		height:100%;
+		width:90%;
+		flex-wrap: wrap;
+	}
+	.gallary-image-box{
+		width:97%;
+		margin:7px 0px;
+	}
+}

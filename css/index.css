@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+/*-----------------slider start-----------------------------------------*/
+.slider-section{
+    height: 70vh;
+    width: 100%;
+}
+.slide{
+    height: 100%;
+    width: 100%;
+    background-color:#000;
+}
+.slide img{
+    height: 100%;
+    width: 100%;
+}
+
+/*----------------footer start------------------------------------------------*/
+footer{
+    padding: 60px 150px 0px 150px;
+    background-color: aqua;
+}
+.footer-box{
+    min-height: 150px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+.footer-box::after{
+    content: " ";
+    position: absolute;
+    height: .1%;
+    width: 100%;
+    background-color: #000;
+    bottom: 0;
+    right: 0;
+}
+.footer-content-box{
+    min-height: 310px;
+    width: 23%;
+
+}
+.footer-content-box .footer-img{
+    height: 100%;
+    width: 100%;
+    transition: .2s;
+    margin-top: 30px;
+}
+.footer-content-box .footer-img:hover{
+    transform: scale(1.05);
+}
+.footer-content-box .para-educator{
+    margin: 8% 0% 16% 0%;
+    line-height: 24px;
+}
+.footer-content-box .footer-contact li{
+    list-style: none;
+    margin: 5% 0%;
+}
+.footer-content-box .footer-contact li a{
+    text-decoration: none;
+    color:#000;   
+    font-weight: bold;
+}
+.footer-content-box .footer-contact li a span{
+    margin-right: 5%;
+}
+.footer-latest-new li{
+    list-style: none;
+    margin: 8% 0% 2% 0%;
+    
+}
+.footer-latest-new p{
+    font-size: 14px;
+}
+.footer-latest-new li a{
+    text-decoration: none;
+    color:#000;
+    font-weight: bold;
+}
+.useful-links li{
+    list-style: none;
+    margin: 8% 0% 0% 0%;
+}
+.useful-links li a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+.footer-map li{
+    list-style: none;
+}
+.footer-map li a{
+    text-decoration: none;
+}
+.copy-right{
+    padding: 20px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.copy-right-box{
+    min-height: 20px;
+    min-width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.copy-right-box .all-right{
+    font-size: 12px;
+    font-weight: bold;
+}
+.copy-right-box a{
+    text-decoration: none;
+    color: #000;
+    
+    font-size: 12px;
+    font-weight: bold;
+}
+.copy-right-box p{
+    margin: 0% 5% 0% 0%;
+    font-size: 12px;
+    font-weight: bold;
+}
+.copy-right-logo{
+    display: flex;
+}
+.copy-right-logo li{
+    list-style: none;
+    padding-left: 15%;
+}
+.copy-right-logo li a{
+    text-decoration: none;
+}
+@media screen and (max-width:1024px)
+{
+    footer
+    {
+        padding: 20px 70px;
+    }
+    .footer-content-box
+    {
+        margin-bottom: 3%;
+        width: 31%;
+
+    }
+    .footer-box::after{
+        content: " ";
+        position: absolute;
+        height: .1%;
+        width: 100%;
+        background-color: #000;
+        bottom: 20px;
+        right: 0;
+    }
+    
+}
+@media screen and (max-width:768px)
+{
+    footer
+    {
+        padding: 20px 80px;
+    }
+    .footer-content-box{
+        
+        margin-bottom: 3%;
+        width: 50%;
+    }
+
+    .footer-box::after{
+        content: " ";
+        position: absolute;
+        height: .1%;
+        width: 100%;
+        background-color: #000;
+        bottom: 10px;
+        right: 0;
+    }
+    .copy-right-box{
+        width: 100%;
+        margin: 10px 0px;
+    }
+    .copy-right-box p{
+        margin: 0% 5% 0% 0%;
+    }
+    .copy-right-box a{
+        margin: 0%;
+    }
+    
+}
+@media screen and (max-width:600px)
+{
+    footer
+    {
+        padding: 20px 60px;
+    }
+    .footer-content-box
+    {
+        margin-bottom: 5%;
+        width: 98%;
+    }
+    .footer-box::after{
+        content: " ";
+        position: absolute;
+        height: .01%;
+        width: 100%;
+        background-color: #000;
+        bottom: 10px;
+        right: 0;
+    }
+}
+

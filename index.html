@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Management</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <!------------------slider start---------------->
+    <section class="slider-section">
+        <div class="slide">
+            <img src="image/istockphoto-506293036-2048x2048.jpg" alt="" id="img">
+        </div>
+    </section>
+    <!-----------------footer start---------------->
+    <section>
+        <footer>
+            <div class="footer-box">
+                <div class="footer-content-box">
+                    <h2>
+                        Educate
+                    </h2>
+                    <p class="para-educator">Providing Life Changing Experiences Through Education. Class That Fit Your Busy Life. Closer to
+                        Home
+                    </p>
+                    <ul class="footer-contact">
+                        <li>
+                            <a href="#"><span><i class="fa-solid fa-phone"></i></span>1-232-432-4432</a>
+                        </li>
+                        <li>
+                            <a href="#"><span><i class="fa-regular fa-clock"></i> </span>Mon - Sat 8.00 - 18.00</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-content-box">
+                    <h2>Latest News</h2>
+                    <ul class="footer-latest-new">
+                        <li><a href="#">Graduate Admissions</a></li>
+                        <p>by Craig Murphy</p>
+                        <li><a href="#">Continuing Education</a></li>
+                        <p>by Craig Murphy</p>
+                        <li><a href="#">Current Students</a></li>
+                        <p>by Craig Murphy</p>
+                    </ul>
+                </div>
+                <div class="footer-content-box">
+                    <h2>Useful Links</h2>
+                    <ul class="useful-links">
+                        <li><a href="#">Popular Courses</a></li>
+                        <li><a href="#">Forums</a></li>
+                        <li><a href="#">Our Teachers</a></li>
+                        <li><a href="#">Upcoming Events</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-content-box">
+                    <h2>Flexible learning</h2>
+                    <ul class="footer-map">
+                        <li><a href="#">
+                                <img src="image/footer-map-2.png" class="footer-img" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copy-right">
+                <div class="copy-right-box">
+                    <span class="all-right">© 2017 QODE INTERACTIVE, ALL RIGHTS RESERVED</span>
+                </div>
+                <div class="copy-right-box">
+                    <span><a href="#">CALL +44 300 303 0266 </a></span>
+                        <span>&nbsp;&nbsp;FOLLOW US</span>
+                    
+                </div>
+                <div class="copy-right-box">
+                    <ul class="copy-right-logo">
+                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-pinterest"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </section>
+    
+    <script src="js/all.min.js"></script>
+    <script>
+        let slider=["image/trees-3464777_1280.jpg","image/trees-3294681_1280.jpg","image/snail-2946075_1280.jpg","image/istockphoto-539121576-2048x2048.jpg","image/forest-1258845_1280.jpg"];
+        let i=0;
+        function demo(){
+            let im=document.getElementById("img");
+            im.src=slider[i];
+            i++;
+            if(i==slider.length){
+                i=0;
+            }
+        }
+        window.setInterval(demo,2000);
+    </script>
+</body>
+</html>
